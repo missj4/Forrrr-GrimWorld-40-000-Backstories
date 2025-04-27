@@ -151,28 +151,6 @@
    
    <BackstoryDef>
     <defName>Worldbackstory08</defName>   
-    <title>Industrial World</title>  
-    <titleShort>Industrial World</titleShort>  
-    <baseDesc>[PAWN_nameDef] was born on a Industrial World, a massive foundry of production, mining, or refining. Sparsely populated, [PAWN_nameDef] learned a variety of useful skills that help both on and off the field making them useful among the Astra Militarum.</baseDesc>  
-    <slot>Childhood</slot>  
-	<skillGains>
-      <Plants>-3</Plants>    
-      <Animals>-3</Animals>    
-      <Social>-2</Social>
-	  <Crafting>5</Crafting>
-	  <Artistic>3</Artistic>
-	  <Mining>3</Mining>
-    </skillGains>
-	<spawnCategories><li>Grimworld Backstories</li></spawnCategories>
-	<bodyTypeMale>Male</bodyTypeMale>
-	<bodyTypeFemale>Female</bodyTypeFemale>
-	<forcedTraits>
-	  <FBS_Industrial>0</FBS_Industrial>
-	</forcedTraits>    
-   </BackstoryDef>
-   
-   <BackstoryDef>
-    <defName>Worldbackstory09</defName>   
     <title>Fortress World</title>  
     <titleShort>Fortress World</titleShort>  
     <baseDesc>[PAWN_nameDef] was born a Fortress World, a planet whose sole purpose is to fight, and continue fighting, defending whatever sector they reside in. A literal maze of endless fortifications, defenses, weapon systems, [PAWN_nameDef] grew only knowing war, to treat their comrades, to keep fighting, and to never surrender. It’s because of soldiers like them that the Imperium of Man endures. For the very planet itself will break before [PAWN_nameDef] will.</baseDesc>  
@@ -194,7 +172,7 @@
    </BackstoryDef>
    
    <BackstoryDef>
-    <defName>Worldbackstory10</defName>   
+    <defName>Worldbackstory09</defName>   
     <title>Hive World</title>  
     <titleShort>Hive World</titleShort>  
     <baseDesc>[PAWN_nameDef] was born on a Hive World, one of the most heavily populated planets of the Imperium of Man. Billions of people crammed into all manner of arcology like cities that stretch high into the sky. [PAWN_pronoun] learned quickly how to produce and build the goods needed to keep the Imperium alive, however, Hive worlds serve another purpose. [PAWN_nameDef] is one of billions of people, a neigh unlimited resource to protect the Imperium of Man from the threats throughout the galaxy. [PAWN_pronoun] was inducted into the Astra Militarum, to fight alongside with billions of others, to defend against all that threaten the Imperium.</baseDesc>  
@@ -215,7 +193,7 @@
    </BackstoryDef>
    
    <BackstoryDef>
-    <defName>Worldbackstory11</defName>   
+    <defName>Worldbackstory10</defName>   
     <title>Ice World</title>  
     <titleShort>Ice World</titleShort>  
     <baseDesc>[PAWN_nameDef] was born on an Ice World,a frozen wasteland covered in massive sheets of ice and mountains of snow. Living inside special structures both above and below the service, [PAWN_pronoun] learned quickly that you had to dig to survive, and hunt for materials to stay warm. [PAWN_nameDef] did, as many eventually do, left [PAWN_pronoun] planet and joined the Astra Militarum to escape the cold of one environment to find their experience useful in another frozen waste.</baseDesc>  
@@ -235,7 +213,7 @@
    </BackstoryDef>
    
    <BackstoryDef>
-    <defName>Worldbackstory12</defName>   
+    <defName>Worldbackstory11</defName>   
     <title>Imperial World</title>  
     <titleShort>Imperial World</titleShort>  
     <baseDesc>[PAWN_nameDef] was born on an Imperial World. Imperial Worlds are one of untold hundreds of thousands of planets that are not overly unique and not unlike what Terra once was before it became a churning planet of production. [PAWN_nameDef] enjoyed an educated life, the civilized world offering ample opportunity with few threats to ever really concern them. Like any Imperial citizen, [PAWN_nameDef] felt the call to join the Astra Militarum, and to serve in the name of the emperor.</baseDesc>  
@@ -254,6 +232,28 @@
 	<forcedTraits>
 	  <FBS_Imperial>0</FBS_Imperial>
 	</forcedTraits>
+   </BackstoryDef>
+   
+   <BackstoryDef>
+    <defName>Worldbackstory12</defName>   
+    <title>Industrial World</title>  
+    <titleShort>Industrial World</titleShort>  
+    <baseDesc>[PAWN_nameDef] was born on a Industrial World, a massive foundry of production, mining, or refining. Sparsely populated, [PAWN_nameDef] learned a variety of useful skills that help both on and off the field making them useful among the Astra Militarum.</baseDesc>  
+    <slot>Childhood</slot>  
+	<skillGains>
+      <Plants>-3</Plants>    
+      <Animals>-3</Animals>    
+      <Social>-2</Social>
+	  <Crafting>5</Crafting>
+	  <Artistic>3</Artistic>
+	  <Mining>3</Mining>
+    </skillGains>
+	<spawnCategories><li>Grimworld Backstories</li></spawnCategories>
+	<bodyTypeMale>Male</bodyTypeMale>
+	<bodyTypeFemale>Female</bodyTypeFemale>
+	<forcedTraits>
+	  <FBS_Industrial>0</FBS_Industrial>
+	</forcedTraits>    
    </BackstoryDef>
    
    <BackstoryDef>
@@ -327,5 +327,5 @@
 	  <FBS_Miner>0</FBS_Miner>
 	</forcedTraits>
    </BackstoryDef>
-
+	
 </Defs>
