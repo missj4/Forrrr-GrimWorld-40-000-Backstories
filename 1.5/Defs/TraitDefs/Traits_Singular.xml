@@ -2,7 +2,7 @@
 <Defs>
 
 <!-- These traits are specialized to Child Backgrounds-->
-
+	
   <TraitDef>
     <defName>FBS_Agri</defName>
     <commonality>0.0001</commonality>
@@ -58,19 +58,26 @@
   </TraitDef>
   
   <TraitDef>
-    <defName>FBS_Industrial</defName>
+    <defName>FBS_Deathkorp</defName>
 	<commonality>0.0001</commonality>
     <degreeDatas>
       <li>
-        <label>Industrial Heritage</label>
-        <description>[PAWN_nameDef] grew up on an industrial world learning various forms of manufacturing and other physical labour skills.</description>
+        <label>Death Korps Upbringing</label>
+        <description>[PAWN_nameDef] has endured the extreme and brutal conditions of Krieg, making them adept at melee combat, trench warfare, and extremely toxic environments.</description>
         <statOffsets>
-		  <GeneralLaborSpeed>0.25</GeneralLaborSpeed>
+          <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+          <ComfyTemperatureMax>5</ComfyTemperatureMax>
+		  <MentalBreakThreshold>-0.10</MentalBreakThreshold>
+		  <ToxicResistance>0.10</ToxicResistance>
+          <PainShockThreshold>0.10</PainShockThreshold>
+          <MeleeDodgeChance>5</MeleeDodgeChance>
+          <MeleeHitChance>5</MeleeHitChance>
+		  <ConstructionSpeed>0.1</ConstructionSpeed>
         </statOffsets>
       </li>
     </degreeDatas>
-  </TraitDef>  
-
+  </TraitDef>
+  
   <TraitDef>
     <defName>FBS_Desert</defName>
     <commonality>0.0001</commonality>
@@ -193,6 +200,20 @@
   </TraitDef>
   
   <TraitDef>
+    <defName>FBS_Industrial</defName>
+	<commonality>0.0001</commonality>
+    <degreeDatas>
+      <li>
+        <label>Industrial Heritage</label>
+        <description>[PAWN_nameDef] grew up on an industrial world learning various forms of manufacturing and other physical labour skills.</description>
+        <statOffsets>
+		  <GeneralLaborSpeed>0.25</GeneralLaborSpeed>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+  
+  <TraitDef>
     <defName>FBS_Void</defName>
     <commonality>0.0001</commonality>
 	<degreeDatas>
@@ -264,7 +285,10 @@
       <li>
         <label>Former Prisoner</label>
         <description>{PAWN_nameDef}, accused of whatever crime, {PAWN_pronoun} has been told they either fight or die. {PAWN_pronoun} is very likely to start fights or cause general disorder due to their past experiences.</description>
-      </li>
+        <statOffsets>
+          <MentalBreakThreshold>0.05</MentalBreakThreshold>
+        </statOffsets>
+	  </li>
     </degreeDatas>
     <requiredWorkTags>
       <li>Violent</li>
@@ -627,5 +651,42 @@
       </li>
     </degreeDatas>
   </TraitDef>
-
+  
+  <TraitDef>
+    <defName>SM_General</defName>
+    <commonality>0.0001</commonality>
+    <degreeDatas>
+      <li>
+        <label>Space Marine</label>
+        <description>[PAWN_nameDef] is a Space Marine, a genetically modified super soldier of the Imperium of Man, they know no fear</description>
+        <statOffsets>      
+		  <MentalBreakThreshold>-0.2</MentalBreakThreshold>
+		  <MoveSpeed>0.2</MoveSpeed>
+          <ImmunityGainSpeed>0.30</ImmunityGainSpeed>
+          <WorkSpeedGlobal>0.20</WorkSpeedGlobal>		  
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+  
+  <TraitDef>
+    <defName>SM_Apothecary</defName>
+    <commonality>0.0001</commonality>
+    <degreeDatas>
+      <li>
+        <label>Medicae Doctor</label>
+        <description>[PAWN_nameDef] is skilled in surgery and tending to the medical needs of others.</description>
+        <statOffsets>
+		  <SurgerySuccessChanceFactor>0.2</SurgerySuccessChanceFactor>
+		  <MedicalTendQuality>0.2</MedicalTendQuality>
+		  <MedicalTendSpeed>0.2</MedicalTendSpeed>
+		  <MedicalOperationSpeed>0.2</MedicalOperationSpeed>
+		</statOffsets>
+	  </li>
+	</degreeDatas>
+	  <requiredWorkTypes>
+		<li>Doctor</li>
+	  </requiredWorkTypes>
+  </TraitDef>
+	
 </Defs>
